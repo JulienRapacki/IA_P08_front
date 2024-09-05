@@ -1,5 +1,6 @@
-numpy
-opencv_contrib_python
-Pillow
-Requests
-streamlit
+numpy==1.26
+opencv_contrib_python==4.9.0.80
+Pillow==9.1.0
+Pillow==10.4.0
+Requests==2.32.3
+streamlit==1.38.0
