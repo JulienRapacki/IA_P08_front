@@ -1,5 +1,4 @@
 numpy
 Pillow
-
-Requests==2.32.3
-streamlit==1.38.0
+Requests
+streamlit
