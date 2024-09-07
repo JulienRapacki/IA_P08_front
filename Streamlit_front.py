@@ -38,7 +38,7 @@ st.title("Segmentation d'image avec API")
 uploaded_image = st.file_uploader("Charger une image", type=["png", "jpg", "jpeg"])
 
 # Option pour charger un masque réel (facultatif)
-uploaded_mask = st.file_uploader("Charger un mask réel (optionnel)", type=["png"])
+uploaded_mask = st.file_uploader("Charger un mask réel", type=["png"])
 
 if uploaded_image is not None:
     # Lire l'image originale en tant qu'image PIL
@@ -51,7 +51,7 @@ if uploaded_image is not None:
     # Si un masque réel est fourni, on le charge
     real_mask = None
     if uploaded_mask is not None:
-        real_mask = Image.open(uploaded_mask).convert('L')  # Convertir en niveaux de gris
+        real_mask = Image.open(uploaded_mask) 
         st.write("Mask réel chargé :")
         st.image(real_mask, caption="Mask Réel", use_column_width=True, clamp=True)
 
